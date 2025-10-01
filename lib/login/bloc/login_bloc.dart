@@ -10,7 +10,7 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
       // Simulación de login
       await Future.delayed(Duration(seconds: 2));
 
-      if (event.email == 'ivan@gmail.com' && event.password == '123456') {
+      if (event.email == 'sebas@gmail.com' && event.password == '123456') {
         emit(LoginSuccess(email: event.email, password: event.password));
       } else {
         emit(LoginError(message: 'Credenciales inválidas'));
